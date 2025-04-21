@@ -1,20 +1,7 @@
-import { View, Text } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useState } from "react";
 
-import BodyText from "./app/components/AppText/BodyText";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "white",
-      }}
-    >
-      <MaterialCommunityIcons name="heart" size={20} color="red" />
-      <BodyText>I love react native!</BodyText>
-    </View>
-  );
+  return <ListingEditScreen />;
 }
